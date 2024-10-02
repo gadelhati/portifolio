@@ -220,3 +220,56 @@
         width: 290px;
     }
 }
+.contact {
+    a img {
+        position: fixed;
+        width: 3rem;
+        height: 3rem;
+        z-index: 100;
+    }
+    .bt-linkedin img {
+        right: 2rem;
+        bottom: 2rem;
+    }
+    .bt-github img {
+        right: 2rem;
+        bottom: 5.25rem;
+    }
+    .bt-whatsapp img {
+        right: 2rem;
+        bottom: 8.5rem;
+    }
+}
+
+#alertWapp {
+    right: 3rem;
+    visibility: hidden;
+    position: fixed;
+    width: 17px;
+    height: 17px;
+    bottom: 90px;
+    background: red;
+    z-index: 101;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#msg1 {
+    right: 90px;
+    visibility: visible;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    width: 200px;
+    bottom: 52px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 31px;
+    height: 32px;
+    border-radius: 100px;
+    z-index: 100;
+}
