@@ -2,6 +2,13 @@ import './portifolio.css'
 import whatsapp from './../assets/image/whatsapp.png'
 import linkedin from './../assets/image/linkedin.png'
 import github from './../assets/image/github.png'
+import maps from './../assets/image/maps.jpg'
+import wms from './../assets/image/wms.jpg'
+import app from './../assets/image/app.jpg'
+import nutrition from './../assets/image/nutrition.jpg'
+import weather from './../assets/image/weather.jpg'
+import support from './../assets/image/support.jpg'
+import { ListProject } from './project'
 
 export const Portifolio = () => {
     return (
@@ -25,7 +32,15 @@ export const Portifolio = () => {
             </section>
             <section>
                 <div className="parallax-one">
-                    <h2>SOUTHERN CALIFORNIA</h2>
+                    <h2>PROJECTS</h2>
+                    <div className='projects'>
+                        <ListProject name={'App'} photo={`${app}`} time={0} description={'Um app de acompanhamento da Conmebol oferece atualizações em tempo real dos torneios sul-americanos, como a Libertadores e a Sul-Americana.'}/>
+                        <ListProject name={'Maps'} photo={`${maps}`} time={200} description={'Com esta aplicação é possivel marcar locais específicos, associar dados como fotos e descrições. Ideal para urbanismo, gestão de propriedades, estudos ambientais e logística.'}/>
+                        <ListProject name={'Nutrição'} photo={`${nutrition}`} time={400} description={'A aplicação oferece uma base de dados de alimentos e suas informações nutricionais, ajudando a registrar e calcular calorias, proteínas, carboidratos e gorduras consumidas.'}/>
+                        <ListProject name={'WMS'} photo={`${wms}`} time={600} description={'WMS gerencia operações de armazenamento e logística. Ele otimiza o controle de inventário, permitindo rastrear o recebimento, armazenagem.'}/>
+                        <ListProject name={'Suporte'} photo={`${support}`} time={800} description={'Gerencia o inventário e a manutenção de dispositivos tecnológicos. Permite cadastrar e monitorar equipamentos de e periféricos, registrando fabricante, modelo e outros.'}/>
+                        <ListProject name={'Observação Meteorológica'} photo={`${weather}`} time={1000} description={'Registra e exibe dados sobre as condições climáticas. Oferece informações como temperatura, umidade, pressão atmosférica, velocidade e direção do vento.'}/>
+                    </div>
                 </div>
             </section>
             <section>
@@ -37,7 +52,7 @@ export const Portifolio = () => {
             </section>
             <section>
                 <div className="parallax-two">
-                    <h2>NEW YORK</h2>
+                    <h2>HOW CAN I HELP YOU</h2>
                 </div>
             </section>
             <section>
@@ -49,7 +64,7 @@ export const Portifolio = () => {
             </section>
             <section>
                 <div className="parallax-three">
-                    <h2>ENCHANTED FOREST</h2>
+                    <h2>SOFTSKILLS</h2>
                 </div>
             </section>
             <section>
