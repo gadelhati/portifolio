@@ -6,11 +6,13 @@ import java from './../assets/image/java.png'
 import spring from './../assets/image/spring.png'
 import springboot from './../assets/image/springboot.png'
 import springsecutity from './../assets/image/springsecurity.png'
+import github from './../assets/image/github.png'
 import './project.css'
 import { useEffect } from 'react'
 
 interface Project {
     name: string,
+    repository: string,
     photo: string,
     time: number;
     description: string,
@@ -39,7 +41,7 @@ export const ListProject = (project: Project) => {
         <fieldset className='project hide' style={{ transitionDelay: `${project.time}ms` }}>
             <legend>{project.name}</legend>
             <figure>
-                <img src={project.photo} alt={"Elephant at sunset"} />
+                <img src={project.photo} alt={"Project preview"} />
                 <figcaption></figcaption>
             </figure>
             <header>
@@ -76,9 +78,16 @@ export const ListProject = (project: Project) => {
                     <figcaption></figcaption>
                 </figure>
             </header>
-            <p>{project.description}</p>
+            <center>
+                <p>{project.description}</p>
+                <a href={`https://github.com/gadelhati/${project.repository}`} target="_blank" >
+                    <img src={github} alt='github'></img>
+                </a>
+            </center>
             <footer>
-                
+                <a href="https://github.com/gadelhati/" target="_blank" >
+                    {/* <img src={github} alt='github'></img> */}
+                </a>
             </footer>
         </fieldset>
     )

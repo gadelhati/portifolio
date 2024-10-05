@@ -1,72 +1,121 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
-/* Override UGG site */
-#main {
+#portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#portifolio > section {
+    height: 40rem;
+    width: 80%;
+}
+#portifolio > section > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
     width: 100%;
-    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
-.content-asset p {
-    margin: 0 auto;
-}
-
-.breadcrumb {
-    display: none;
-}
-
-/* Helpers */
-/**************************/
-.margin-top-10 {
-    padding-top: 10px;
-}
-
-.margin-bot-10 {
-    padding-bottom: 10px;
-}
-
-/* Typography */
-/**************************/
-#parallax-world-of-ugg h1 {
+#portifolio > section > article > header {
+    margin: 0%;
     font-family: 'Oswald', sans-serif;
-    font-size: 24px;
     font-weight: 400;
+    font-size: 4rem;
     text-transform: uppercase;
-    color: black;
-    padding: 0;
-    margin: 0;
 }
-
-#parallax-world-of-ugg h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    letter-spacing: 10px;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: .9;
-}
-
-#parallax-world-of-ugg h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    line-height: 0;
-    font-weight: 400;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    color: black;
-}
-
-#parallax-world-of-ugg p {
+#portifolio > section > article > p {
+    margin: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    color: black;
+}
+#portifolio > section > article > p > ul > li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#portifolio {
+    section {
+        article {
+            ul > li > p {
+                margin: 0%;
+            }
+            ul > li > img {
+                height: 2rem;
+                padding: .25rem;
+            }
+        }
+    }
 }
 
-.first-character {
+#portifolio > :first-child {
+    height: 10rem;
+    article {
+        h1, h3 {
+            margin: 0%;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: black;
+        }
+        h1 {
+            padding: 0%;
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1rem;
+            letter-spacing: .25rem;
+        }
+    }
+}
+
+#portifolio> :nth-child(odd) {
+    background-color: white;
+}
+
+/* #portifolio :first-child {
+    height: 10rem;
+    background-color: white;
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+        margin: 0;
+    }
+} */
+
+/* #portifolio :nth-child(1) {
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: black;
+        margin: 0;
+    }
+} */
+
+/* #portifolio p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+} */
+
+/* .first-character {
     font-weight: 400;
     float: left;
     font-size: 84px;
@@ -75,9 +124,9 @@
     padding-right: 8px;
     padding-left: 3px;
     font-family: 'Source Sans Pro', sans-serif;
-}
+} */
 
-.sc {
+/* .sc {
     color: #3b8595;
 }
 
@@ -87,195 +136,62 @@
 
 .atw {
     color: #c48660;
-}
+} */
 
-/* Section - Title */
-/**************************/
-#parallax-world-of-ugg .title {
+/* #portifolio .block {
     background: white;
     padding: 60px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#parallax-world-of-ugg .title h1 {
-    font-size: 35px;
-    letter-spacing: 8px;
-}
-
-/* Section - Block */
-/**************************/
-#parallax-world-of-ugg .block {
-    background: white;
-    padding: 60px;
-    width: 820px;
-    margin: 0 auto;
+    width: 80%;
+    color: black;
+    margin: 0%;
     text-align: justify;
-}
+} */
 
-#parallax-world-of-ugg .block-gray {
-    background: #f2f2f2;
-    padding: 60px;
-}
-
-#parallax-world-of-ugg .section-overlay-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.70;
-}
-
-/* Section - Parallax */
-/**************************/
-#parallax-world-of-ugg .parallax-one {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url('./../assets/image/particules.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-#parallax-world-of-ugg .parallax-two {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url('./../assets/image/mirante.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-#parallax-world-of-ugg .parallax-three {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url('./../assets/image/maranhao.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-/* Extras */
-/**************************/
-#parallax-world-of-ugg .line-break {
-    border-bottom: 1px solid black;
-    width: 150px;
-    margin: 0 auto;
-}
-
-/* Media Queries */
-/**************************/
-@media screen and (max-width: 959px) and (min-width: 768px) {
-    #parallax-world-of-ugg .block {
-        padding: 40px;
-        width: 620px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    #parallax-world-of-ugg .block {
-        padding: 30px;
-        width: 420px;
-    }
-
-    #parallax-world-of-ugg h2 {
-        font-size: 30px;
-    }
-
-    #parallax-world-of-ugg .block {
-        padding: 30px;
-    }
-
-    #parallax-world-of-ugg .parallax-one,
-    #parallax-world-of-ugg .parallax-two,
-    #parallax-world-of-ugg .parallax-three {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    #parallax-world-of-ugg .block {
-        padding: 30px 15px;
-        width: 290px;
-    }
-}
-.contact {
-    a img {
-        position: fixed;
-        width: 3rem;
-        height: 3rem;
-        z-index: 100;
-    }
-    .bt-linkedin img {
-        right: 2rem;
-        bottom: 2rem;
-    }
-    .bt-github img {
-        right: 2rem;
-        bottom: 5.25rem;
-    }
-    .bt-whatsapp img {
-        right: 2rem;
-        bottom: 8.5rem;
-    }
-}
-
-#alertWapp {
-    right: 3rem;
-    visibility: hidden;
-    position: fixed;
-    width: 17px;
-    height: 17px;
-    bottom: 90px;
-    background: red;
-    z-index: 101;
-    font-size: 11px;
-    color: #fff;
+/* section>article>header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
     text-align: center;
-    border-radius: 50px;
-    font-weight: bold;
-    line-height: normal;
-}
+    font-weight: 400;
+    color: red;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: .9;
+} */
 
-#msg1 {
-    right: 90px;
-    visibility: visible;
-    background: #000;
-    color: #fff;
-    position: fixed;
-    width: 200px;
-    bottom: 52px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 31px;
-    height: 32px;
-    border-radius: 100px;
-    z-index: 100;
-}
+/* article :nth-child(1) {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    line-height: 0;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: black;
+} */
 
-.projects {
+/* article :nth-child(2) {
+    font-size: 2rem;
+    letter-spacing: 8px;
+} */
+
+#parallax-one {
+    margin: 0%;
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    background-image: url('./../assets/image/particules.jpg');
 }
+
+#parallax-two {
+    background-image: url('./../assets/image/mirante.jpg');
+}
+
+#parallax-three {
+    background-image: url('./../assets/image/maranhao.jpg');
+}
+
+/* #line-break {
+    border-bottom: .1rem solid black;
+    margin: 0 auto;
+} */

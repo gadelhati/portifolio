@@ -1,0 +1,18 @@
+.contact {
+    a img {
+        position: fixed;
+        right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        z-index: 100;
+    }
+}
+.contact :nth-child(1) img {
+    bottom: 2rem;
+}
+.contact :nth-child(2) img {
+    bottom: 5.25rem;
+}
+.contact :nth-child(3) img {
+    bottom: 8.5rem;
+}

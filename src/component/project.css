@@ -2,47 +2,95 @@
     opacity: 0;
     filter: blur(1rem);
     transition: all 1s;
-    transform: translateX(-100%);    
+    transform: perspective(1000px) translateX(-100%) translateZ(-5px);    
 }
 .show {
     opacity: 1;
     filter: blur(0rem);
     transition: all 1s;
-    transform: translateX(0%);
+    transform: perspective(0px) translateX(0%) translateZ(0px);
 }
-fieldset {
+.project > center {
+    opacity: 0;
+    transition: all ease-in-out .25s;
+}
+.project:hover {
+    header {
+        display: none;
+    }
+    legend {
+        display: block;
+    }
+    center {
+        height: 100%;
+        align-content: center;
+        opacity: 1;
+        backdrop-filter: brightness(25%);
+        border-radius: .3rem;
+        transition: all ease-in-out .25s;
+    }
+}
+.project > center > p {
     margin: 1rem;
-    height: 20rem;
-    width: 10rem;
+    padding: .5rem;
+    color: white;
+    backdrop-filter: blur(0rem);
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: .5rem;
+    padding: 0%;
+    height: 18rem;
+    width: 18rem;
     border-radius: .5rem;
-    backdrop-filter: blur(.5rem);
+    backdrop-filter: blur(1rem);
     box-shadow: 0px 13px 28px 0px rgba(0,0,0,0.79);
+    border-color: white;
+}
+.project > legend {
+    display: none;
+    position: relative;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 0%;
+    align-items: center;
+    z-index: 4;
+}
+.project > figure {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: .3rem;
+        object-fit: cover;
+    }
+}
+.project>header {
+    margin: 1rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: .5rem;
+    backdrop-filter: blur(1rem);
     figure {
         margin: 0%;
-        width: 100%;
+        padding: .25rem;
+
         img {
-            height: 8rem;
-            width: 100%;
-            object-fit: cover;
+            height: 1.5rem;
+            width: 1.5rem;
         }
     }
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        figure {
-            /* position: relative; */
-            margin: 0%;
-            padding: .25rem;
-            img {
-                height: 1.5rem;
-                width: 1.5rem;
-                transition: all 1s;
-            }
-            img:hover {
-                transform: scale(1.5);
-                transition: all .25s;
-            }
-        }
-    }
+}
+.project > center > a > img {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
 }
