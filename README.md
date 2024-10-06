@@ -23,25 +23,23 @@ Georeferenced information.
 
 ### Roadmap
 #### in development
-- [x] add initialOrder on stock
-- [x] input group
+- [ ] video using the project
+- [ ] link: back and front
+- [ ] project: title, description
+- [ ] 
+- [ ] 
 - [x] extract all records in pdf
-- [x] user: improve visual of add multiple roles
 - [ ] test the hooks with anothers interfaces
-- [ ] move card only if hold
 
 #### in concept
-- [ ] set combobox, turn with switch
-- [ ] input mask
-- [ ] sidebar: personal icons
-- [ ] spinner with scrool to select number
 - [ ] breadcrumb
-- [ ] schedule
-- [ ] charts
-- [ ] load privileges on role's form
-- [ ] counter only increases by 1
-- [ ] signature with mouse
-- [ ] context menu
+- [ ] menu: going to side when scrool [about, ...]
+- [ ] languages: EN-US, PT-BR
+- [ ] ... is written title
+- [ ] modal withe more project details
+- [ ] download curriculum vitae
+- [ ] depoiments: clients, coworker
+- [ ] certifications
 
 ## Summary
 * [How to work with this project](#how-to-work-with-this-project)
