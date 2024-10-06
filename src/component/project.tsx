@@ -7,6 +7,7 @@ import spring from './../assets/image/spring.png'
 import springboot from './../assets/image/springboot.png'
 import springsecutity from './../assets/image/springsecurity.png'
 import github from './../assets/image/github.png'
+import web from './../assets/image/web.png'
 import './project.css'
 import { useEffect } from 'react'
 
@@ -82,6 +83,9 @@ export const ListProject = (project: Project) => {
                 <p>{project.description}</p>
                 <a href={`https://github.com/gadelhati/${project.repository}`} target="_blank" >
                     <img src={github} alt='github'></img>
+                </a>
+                <a className='isDisabled' href={`https://github.com/gadelhati/${project.repository}`} target="_blank" >
+                    <img src={web} alt='web'></img>
                 </a>
             </center>
             <footer>

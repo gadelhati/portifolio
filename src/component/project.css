@@ -91,6 +91,12 @@
 }
 .project > center > a > img {
     position: relative;
+    padding: .25rem;
     height: 2rem;
     width: 2rem;
+}
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
 }

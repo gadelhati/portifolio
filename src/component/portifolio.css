@@ -48,13 +48,22 @@
 #portifolio {
     section {
         article {
+            
             ul > li > p {
+                color: black;
                 margin: 0%;
             }
             ul > li > img {
                 height: 2rem;
                 padding: .25rem;
             }
+        }
+        article > center {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
         }
     }
 }

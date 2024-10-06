@@ -32,14 +32,14 @@ export const Portifolio = () => {
             <section>
                 <article id="parallax-one">
                     {/* <header>PROJECTS</header> */}
-                    {/* <div className='projects'> */}
+                    <center>
                         <ListProject name={'App'} repository={'fla-app'} photo={`${app}`} time={0} description={'Um app de acompanhamento da Conmebol oferece atualizações em tempo real dos torneios sul-americanos, como a Libertadores e a Sul-Americana.'} />
                         <ListProject name={'Maps'} repository={'maps-front'} photo={`${maps}`} time={200} description={'Com esta aplicação é possivel marcar locais específicos, associar dados como fotos e descrições. Ideal para urbanismo, gestão de propriedades, estudos ambientais e logística.'} />
                         <ListProject name={'Nutrição'} repository={'nutrition-front'} photo={`${nutrition}`} time={400} description={'A aplicação oferece uma base de dados de alimentos e suas informações nutricionais, ajudando a registrar e calcular calorias, proteínas, carboidratos e gorduras consumidas.'} />
                         <ListProject name={'Armazém'} repository={'wms'} photo={`${wms}`} time={600} description={'WMS gerencia operações de armazenamento e logística. Ele otimiza o controle de inventário, permitindo rastrear o recebimento, armazenagem.'} />
                         <ListProject name={'Suporte'} repository={'support-front'} photo={`${support}`} time={800} description={'Gerencia o inventário e a manutenção de dispositivos tecnológicos. Permite cadastrar e monitorar equipamentos de e periféricos, registrando fabricante, modelo e outros.'} />
                         <ListProject name={'Observação Meteorológica'} repository={'weather-back'} photo={`${weather}`} time={1000} description={'Registra e exibe dados sobre as condições climáticas. Oferece informações como temperatura, umidade, pressão atmosférica, velocidade e direção do vento.'} />
-                    {/* </div> */}
+                    </center>
                 </article>
             </section>
             <section>
