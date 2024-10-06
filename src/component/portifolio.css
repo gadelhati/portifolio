@@ -26,13 +26,21 @@
     background-position: center center;
 }
 #portifolio > section > article > header {
-    margin: 0%;
+    position: absolute;
+    left: 0%;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 4rem;
     text-transform: uppercase;
+    background: #121FCF;
+    background: linear-gradient(lightblue,  #8783bf, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(270deg);
+    /* backdrop-filter: blur(.2rem); */
+    z-index: 10;
 }
-#portifolio > section > article > p {
+#portifolio > section > article > center > p {
     margin: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -40,16 +48,16 @@
     line-height: 24px;
     color: black;
 }
-#portifolio > section > article > p > ul > li {
+#portifolio > section > article > center > ul > li {
     display: flex;
+    flex-direction: row;
     justify-content: start;
     align-items: center;
 }
 #portifolio {
     section {
         article {
-            
-            ul > li > p {
+            center > ul > li > p, center > ul > p  {
                 color: black;
                 margin: 0%;
             }

@@ -31,7 +31,7 @@ export const Portifolio = () => {
             </section>
             <section>
                 <article id="parallax-one">
-                    {/* <header>PROJECTS</header> */}
+                    <header>PROJETOS</header>
                     <center>
                         <ListProject name={'App'} repository={'fla-app'} photo={`${app}`} time={0} description={'Um app de acompanhamento da Conmebol oferece atualizações em tempo real dos torneios sul-americanos, como a Libertadores e a Sul-Americana.'} />
                         <ListProject name={'Maps'} repository={'maps-front'} photo={`${maps}`} time={200} description={'Com esta aplicação é possivel marcar locais específicos, associar dados como fotos e descrições. Ideal para urbanismo, gestão de propriedades, estudos ambientais e logística.'} />
@@ -44,47 +44,39 @@ export const Portifolio = () => {
             </section>
             <section>
                 <article className="block">
-                    <p><span className="first-character sc">P</span>ós Graduado em Engenharia de Software com Java Enterprise Edition, Bacharel em Sistemas de Informação com Ênfase em Análise de Sistemas, Técnico em Hidrografia e navegação formado pela Marinha do Brasil.</p>
-                    <ul><p>Especializações Back-end:</p>
-                        <li><img src={java} alt={"Java"} /><p>Java</p></li>
-                        <li><img src={spring} alt={"Spring"} /><p>Spring: Spring Boot, Spring Security, Spring MVC</p></li>
-                        <li><img src={postgre} alt={"PostgreSQL"} /><p>Postgres e PostGis</p></li>
-                        <li><img src={mysql} alt={"MySQL"} /><p>MySQL</p></li>
-                    </ul>
-                    <ul><p>Especializações Front-end:</p>
-                        <li><img src={typescript} alt={"Typescript"} /><p>Typescricpt</p></li>
-                        <li><img src={react} alt={"React"} /><p>React</p></li>
-                        <li><img src={javascript} alt={"Javascript"} /><p>JavaScript</p></li>
-                        <li><img src={angular} alt={"Ionic"} /><p>Angular com Ionic</p></li>
-                        <li><img src={html} alt={"HTML5"} /><p>HTML5</p></li>
-                        <li><img src={css} alt={"CSS3"} /><p>CSS3</p></li>
-                    </ul>
+                    {/* <p><span className="first-character sc">P</span>ós Graduado em Engenharia de Software com Java Enterprise Edition, Bacharel em Sistemas de Informação com Ênfase em Análise de Sistemas, Técnico em Hidrografia e navegação formado pela Marinha do Brasil.</p> */}
+                    <header>TECNOLOGIAS</header>
+                    <center>
+                        <ul><p>Especializações Back-end:</p>
+                            <li><img src={java} alt={"Java"} /><p>Java</p></li>
+                            <li><img src={spring} alt={"Spring"} /><p>Spring: Spring Boot, Spring Security, Spring MVC</p></li>
+                            <li><img src={postgre} alt={"PostgreSQL"} /><p>Postgres e PostGis</p></li>
+                            <li><img src={mysql} alt={"MySQL"} /><p>MySQL</p></li>
+                        </ul>
+                        <ul><p>Especializações Front-end:</p>
+                            <li><img src={typescript} alt={"Typescript"} /><p>Typescricpt</p></li>
+                            <li><img src={react} alt={"React"} /><p>React</p></li>
+                            <li><img src={javascript} alt={"Javascript"} /><p>JavaScript</p></li>
+                            <li><img src={angular} alt={"Ionic"} /><p>Angular com Ionic</p></li>
+                            <li><img src={html} alt={"HTML5"} /><p>HTML5</p></li>
+                            <li><img src={css} alt={"CSS3"} /><p>CSS3</p></li>
+                        </ul>
+                    </center>
                 </article>
             </section>
             <section>
                 <article id="parallax-two">
-                    <header>HOW CAN I HELP YOU</header>
+                    <header>VAMOS TRABALHAR JUNTOS!</header>
                 </article>
             </section>
             <section>
                 <article className="block">
-                    <p><span className="first-character ny">O</span> Bacharel em Sistemas de Informação atua com inovação, planejamento e gerenciamento da informação e da infra-estrutura de tecnologia da informação alinhados às estratégias organizacionais como também com o desenvolvimento e evolução de sistemas de informação e da infra-estrutura de informação e comunicação, ambos aplicados aos processos organizacionais.</p>
-                    {/* <p id="line-break "></p> */}
-                    <p><span className="first-character ny">P</span>rofissional responsável pela arquitetura de soluções e desenvolvimento de sistemas na plataforma Java, capaz de gerenciar projetos e equipes, usando metodologia adequada. O especialista em Engenharia de Software pode atuar em organizações públicas e privadas, de qualquer porte ou ramo de atuação. Ele desenvolve aplicações corporativas distribuídas, utilizando a linguagem Java, na plataforma Enterprise Edition (J2EE), com arquitetura de três camadas, JSP, Servlets, Struts, Ajax, Java Server Faces, Enterprise JavaBeans 3.0 e Hibernate. Além disso, elabora e implementa processos de desenvolvimento de software e planos de teste, integra aplicações corporativas utilizando web services e SOA, soluciona conflitos, negocia prazos e recursos, lidera equipes e projetos.</p>
-                </article>
-            </section>
-            <section>
-                <article id="parallax-three">
-                    <header>SOFTSKILLS</header>
-                </article>
-            </section>
-            <section>
-                <article className="block">
-                    <p><span className="first-character atw">S</span>uspervisor de Desenvolvimento de Software. Atuando na gestão e liderança da equipe de desenvolvimento. Responsável pela definição e distribuição de tarefas, acompanhando o progresso, e garantia da aderência aos padrões de qualidade e prazos. Um ponto de referência técnico, oferecendo orientação e resolução de desafios complexos.</p>
-                    {/* <p id="line-break "></p> */}
-                    <p><span className="first-character atw">C</span>oleta dados meteorológicos, maregráficos, oceanográficos, hidrográficos, geológicos, por meio da operação de equipamentos específicos. Interpreta boletins meteorológicos. Confecciona cartas náuticas oceânicas e de vias navegáveis interiores, sob supervisão profissional pertinente. Efetua medições em campo para execução dos métodos topográfico-altimétricos. Realiza cálculos topográficos. Identifica astros e elementos que determinam sua posição na esfera celeste. Determina a posição de um navio por meio de métodos específicos. Orienta equipes nas tarefas de medição de ângulos, observação e cálculos de marés. Opera sistemas de geoprocessamento.</p>
-                    {/* <p id="line-break "></p> */}
-                    <p><span className="first-character atw">I</span>nstrutor de Informática planeja e desenvolve situações de ensino e aprendizagem voltadas para a qualificação profissional de jovens e adultos orientando-os nas técnicas específicas da área em questão. Ele avalia processo ensino/aprendizagem; elabora material pedagógico; sistematiza estudos, informações e experiências sobre a área ensinada.</p>
+                    <header>EXPERIÊNCIAS</header>
+                    <center>
+                        <p>Sou um desenvolvedor full stack com vasta experiência em arquitetura e desenvolvimento de sistemas corporativos na plataforma Java, combinando habilidades em back-end e front-end para criar soluções robustas e escaláveis. Com forte especialização em Java Enterprise Edition (J2EE) e tecnologias de ponta, atuo no desenvolvimento de aplicações distribuídas, utilizando frameworks como Spring Boot, Spring Security, e Spring MVC, além de tecnologias de banco de dados como PostgreSQL (com extensão PostGis) e MySQL.</p>
+                        <p>No front-end, domino React, Typescript, Angular com Ionic, HTML5 e CSS3, criando interfaces modernas e responsivas que maximizam a experiência do usuário. Minha experiência inclui o desenvolvimento de sistemas completos, da arquitetura de três camadas ao desenvolvimento de APIs RESTful, além da integração de aplicações corporativas utilizando web services e SOA.</p>
+                        <p>Como líder de projetos, sou responsável pelo planejamento, execução e gerenciamento de equipes, aplicando metodologias ágeis para garantir entregas eficientes e de alta qualidade. Meu foco é desenvolver soluções que atendam aos requisitos de negócios e sejam sustentáveis a longo prazo, contribuindo para o sucesso de organizações públicas e privadas, independentemente do porte.</p>
+                    </center>
                 </article>
             </section>
             <aside>

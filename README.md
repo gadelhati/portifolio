@@ -23,12 +23,10 @@ Georeferenced information.
 
 ### Roadmap
 #### in development
+- [ ] responsive
+- [ ] project carrosel
 - [ ] video using the project
 - [ ] link: back and front
-- [ ] project: title, description
-- [ ] 
-- [ ] 
-- [x] extract all records in pdf
 - [ ] test the hooks with anothers interfaces
 
 #### in concept
