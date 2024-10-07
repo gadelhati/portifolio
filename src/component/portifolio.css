@@ -7,8 +7,11 @@
     align-items: center;
 }
 #portifolio > section {
-    height: 40rem;
-    width: 80%;
+    width: 95%;
+}
+#portifolio > section:not(:first-child) > article {
+    min-height: 35rem;
+    max-height: 100%;
 }
 #portifolio > section > article {
     display: flex;
@@ -26,18 +29,10 @@
     background-position: center center;
 }
 #portifolio > section > article > header {
-    position: absolute;
-    left: 0%;
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 4rem;
     text-transform: uppercase;
-    background: #121FCF;
-    background: linear-gradient(lightblue,  #8783bf, black);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: rotate(270deg);
-    /* backdrop-filter: blur(.2rem); */
     z-index: 10;
 }
 #portifolio > section > article > center > p {
@@ -48,11 +43,29 @@
     line-height: 24px;
     color: black;
 }
+#portifolio > section > article > center > ul {
+    min-height: 18rem;
+    margin: 1rem;
+    border-radius: .3rem;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(1rem);
+}
+#backend {
+    background-image: url('./../assets/image/java.png');
+}
+#frontend {
+    background-image: url('./../assets/image/css3.png');
+}
 #portifolio > section > article > center > ul > li {
     display: flex;
     flex-direction: row;
-    justify-content: start;
     align-items: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0 1rem;
 }
 #portifolio {
     section {
@@ -101,102 +114,7 @@
     background-color: white;
 }
 
-/* #portifolio :first-child {
-    height: 10rem;
-    background-color: white;
-    h1 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: black;
-        margin: 0;
-    }
-} */
-
-/* #portifolio :nth-child(1) {
-    h1 {
-        font-family: 'Oswald', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: black;
-        margin: 0;
-    }
-} */
-
-/* #portifolio p {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-} */
-
-/* .first-character {
-    font-weight: 400;
-    float: left;
-    font-size: 84px;
-    line-height: 64px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px;
-    font-family: 'Source Sans Pro', sans-serif;
-} */
-
-/* .sc {
-    color: #3b8595;
-}
-
-.ny {
-    color: #3d3c3a;
-}
-
-.atw {
-    color: #c48660;
-} */
-
-/* #portifolio .block {
-    background: white;
-    padding: 60px;
-    width: 80%;
-    color: black;
-    margin: 0%;
-    text-align: justify;
-} */
-
-/* section>article>header {
-    font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    color: red;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: .9;
-} */
-
-/* article :nth-child(1) {
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    line-height: 0;
-    font-weight: 400;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    color: black;
-} */
-
-/* article :nth-child(2) {
-    font-size: 2rem;
-    letter-spacing: 8px;
-} */
-
 #parallax-one {
-    margin: 0%;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
     background-image: url('./../assets/image/particules.jpg');
 }
 
@@ -207,8 +125,3 @@
 #parallax-three {
     background-image: url('./../assets/image/maranhao.jpg');
 }
-
-/* #line-break {
-    border-bottom: .1rem solid black;
-    margin: 0 auto;
-} */

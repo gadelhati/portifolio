@@ -31,29 +31,26 @@ export const Portifolio = () => {
             </section>
             <section>
                 <article id="parallax-one">
-                    <header>PROJETOS</header>
                     <center>
                         <ListProject name={'App'} repository={'fla-app'} photo={`${app}`} time={0} description={'Um app de acompanhamento da Conmebol oferece atualizações em tempo real dos torneios sul-americanos, como a Libertadores e a Sul-Americana.'} />
                         <ListProject name={'Maps'} repository={'maps-front'} photo={`${maps}`} time={200} description={'Com esta aplicação é possivel marcar locais específicos, associar dados como fotos e descrições. Ideal para urbanismo, gestão de propriedades, estudos ambientais e logística.'} />
                         <ListProject name={'Nutrição'} repository={'nutrition-front'} photo={`${nutrition}`} time={400} description={'A aplicação oferece uma base de dados de alimentos e suas informações nutricionais, ajudando a registrar e calcular calorias, proteínas, carboidratos e gorduras consumidas.'} />
                         <ListProject name={'Armazém'} repository={'wms'} photo={`${wms}`} time={600} description={'WMS gerencia operações de armazenamento e logística. Ele otimiza o controle de inventário, permitindo rastrear o recebimento, armazenagem.'} />
                         <ListProject name={'Suporte'} repository={'support-front'} photo={`${support}`} time={800} description={'Gerencia o inventário e a manutenção de dispositivos tecnológicos. Permite cadastrar e monitorar equipamentos de e periféricos, registrando fabricante, modelo e outros.'} />
-                        <ListProject name={'Observação Meteorológica'} repository={'weather-back'} photo={`${weather}`} time={1000} description={'Registra e exibe dados sobre as condições climáticas. Oferece informações como temperatura, umidade, pressão atmosférica, velocidade e direção do vento.'} />
+                        <ListProject name={'Meteorologia'} repository={'weather-back'} photo={`${weather}`} time={1000} description={'Registra e exibe dados sobre as condições climáticas. Oferece informações como temperatura, umidade, pressão atmosférica, velocidade e direção do vento.'} />
                     </center>
                 </article>
             </section>
             <section>
                 <article className="block">
-                    {/* <p><span className="first-character sc">P</span>ós Graduado em Engenharia de Software com Java Enterprise Edition, Bacharel em Sistemas de Informação com Ênfase em Análise de Sistemas, Técnico em Hidrografia e navegação formado pela Marinha do Brasil.</p> */}
-                    <header>TECNOLOGIAS</header>
                     <center>
-                        <ul><p>Especializações Back-end:</p>
+                        <ul id='backend' className='project hide'>
                             <li><img src={java} alt={"Java"} /><p>Java</p></li>
-                            <li><img src={spring} alt={"Spring"} /><p>Spring: Spring Boot, Spring Security, Spring MVC</p></li>
+                            <li><img src={spring} alt={"Spring"} /><p>Spring</p></li>
                             <li><img src={postgre} alt={"PostgreSQL"} /><p>Postgres e PostGis</p></li>
                             <li><img src={mysql} alt={"MySQL"} /><p>MySQL</p></li>
                         </ul>
-                        <ul><p>Especializações Front-end:</p>
+                        <ul id='frontend' className='project hide'>
                             <li><img src={typescript} alt={"Typescript"} /><p>Typescricpt</p></li>
                             <li><img src={react} alt={"React"} /><p>React</p></li>
                             <li><img src={javascript} alt={"Javascript"} /><p>JavaScript</p></li>
@@ -67,11 +64,11 @@ export const Portifolio = () => {
             <section>
                 <article id="parallax-two">
                     <header>VAMOS TRABALHAR JUNTOS!</header>
+                    <center></center>
                 </article>
             </section>
             <section>
                 <article className="block">
-                    <header>EXPERIÊNCIAS</header>
                     <center>
                         <p>Sou um desenvolvedor full stack com vasta experiência em arquitetura e desenvolvimento de sistemas corporativos na plataforma Java, combinando habilidades em back-end e front-end para criar soluções robustas e escaláveis. Com forte especialização em Java Enterprise Edition (J2EE) e tecnologias de ponta, atuo no desenvolvimento de aplicações distribuídas, utilizando frameworks como Spring Boot, Spring Security, e Spring MVC, além de tecnologias de banco de dados como PostgreSQL (com extensão PostGis) e MySQL.</p>
                         <p>No front-end, domino React, Typescript, Angular com Ionic, HTML5 e CSS3, criando interfaces modernas e responsivas que maximizam a experiência do usuário. Minha experiência inclui o desenvolvimento de sistemas completos, da arquitetura de três camadas ao desenvolvimento de APIs RESTful, além da integração de aplicações corporativas utilizando web services e SOA.</p>

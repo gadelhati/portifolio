@@ -89,9 +89,7 @@ export const ListProject = (project: Project) => {
                 </a>
             </center>
             <footer>
-                <a href="https://github.com/gadelhati/" target="_blank" >
-                    {/* <img src={github} alt='github'></img> */}
-                </a>
+                <header>Projeto: {project.name}</header>
             </footer>
         </fieldset>
     )
