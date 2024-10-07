@@ -42,7 +42,7 @@ export const Portifolio = () => {
                 </article>
             </section>
             <section>
-                <article className="block">
+                <article>
                     <center>
                         <ul id='backend' className='project hide'>
                             <li><img src={java} alt={"Java"} /><p>Java</p></li>
