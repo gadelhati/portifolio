@@ -46,18 +46,18 @@
 #portifolio > section > article > center > ul {
     min-height: 18rem;
     margin: 1rem;
-    border-radius: .3rem;
+    border-radius: .5rem;
     background-color: lightslategray;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    backdrop-filter: blur(1rem);
+    border: 1px solid;
 }
 #backend {
-    background-image: url('./../assets/image/java.png');
+    background-image: url('./../assets/image/hexagonos4.jpg');
 }
 #frontend {
-    background-image: url('./../assets/image/css3.png');
+    background-image: url('./../assets/image/hexagonos3.jpg');
 }
 #portifolio > section > article > center > ul > li {
     display: flex;
@@ -65,13 +65,14 @@
     align-items: center;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    margin: .1rem;
     padding: 0 1rem;
+    backdrop-filter: blur(.25rem);
 }
 #portifolio {
     section {
         article {
             center > ul > li > p, center > ul > p  {
-                color: black;
                 margin: 0%;
             }
             ul > li > img {
