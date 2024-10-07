@@ -47,7 +47,6 @@
     min-height: 18rem;
     margin: 1rem;
     border-radius: .5rem;
-    background-color: lightslategray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +66,7 @@
     text-transform: uppercase;
     margin: .1rem;
     padding: 0 1rem;
-    backdrop-filter: blur(.25rem);
+    /* backdrop-filter: blur(.25rem); */
 }
 #portifolio {
     section {
